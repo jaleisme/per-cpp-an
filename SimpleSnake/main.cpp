@@ -118,7 +118,6 @@ void Logic(){
 		prevY = prev2Y;
 	}
 	
-	
 	// eventListener buat mindahin arah
 	switch(dir){
 		case LEFT :
@@ -162,16 +161,14 @@ void Logic(){
 }
 
 int main(){
-	//Setup
 	Setup();
-	
-	//Selama Game On!
 	while(!gameOver){
 		Draw(); //Gambar Map dan Objek
 		Input(); //Nambahin eventListener
 		Logic(); //Nerapin Rule
-		Sleep(1); //Mengurangi speed
+		Sleep(0.5); //Mengurangi speed
 	}
+	cout<<"MADE BY KAEL"<<endl;
 	return 0;
 	
 }
